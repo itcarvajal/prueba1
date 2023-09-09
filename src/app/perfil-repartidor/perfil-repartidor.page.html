@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>PERFIL REPARTIDOR</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-content [fullscreen]="true">
+    <ion-list>
+      <ion-item *ngFor="let repartidor of repartidores">
+        <ion-label>{{ repartidor.nombre }}</ion-label>
+        <ion-label>{{ repartidor.direccion }}</ion-label>
+        <ion-label>{{ repartidor.rut }}</ion-label>
+        <ion-label>{{ repartidor.numero }}</ion-label>
+      </ion-item>
+    </ion-list>
+
+    <ion-button expand="full" (click)="Atras5()">HOME</ion-button>
+
+
+  
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">PERFIL REPARTIDOR</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>

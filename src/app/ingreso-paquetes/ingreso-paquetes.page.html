@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>INGRESO PAQUETES</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-label position="floating">Numero Seguimiento</ion-label>
+    <ion-input [(ngModel)]="numeroSeguimiento" name="numeroSeguimiento"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Direccion de Entrega</ion-label>
+    <ion-input [(ngModel)]="direccion" name="direccion"></ion-input>
+  </ion-item>
+
+
+
+
+
+
+  <ion-button expand="full" (click)="agregarPaquetes()">INGRESAR PAQUETE</ion-button>
+  <ion-button expand="full" (click)="Atras4()">HOME</ion-button>
+
+
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">INGRESO PAQUETES</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>

@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>DETALLE PAQUETE</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+
+
+  <ion-list>
+    <ion-item *ngFor="let paquetes of paquetes">
+      <ion-label>{{ paquetes.numeroSeguimiento }}</ion-label>
+      <ion-label>{{ paquetes.direccion }}</ion-label>
+      <ion-label>{{ paquetes.estado }}</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="full" (click)="Atras6()">HOME</ion-button>
+
+
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">DETALLE PAQUETE</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>
